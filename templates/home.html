@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <title>Shubham Careers</title>
@@ -17,12 +17,18 @@
 
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class = "img-fluid" id="banner" src = "https://shubham-carriers-website--shubhamyadav120.repl.co/static/writer.jpeg.jpg">
     <div class = "container">
     <h1 class='text-center mt-2 mb-4'>{{company_name}}career</h1>
-    <img class = "img-fluid" id="banner" src = "https://shubham-carriers-website--shubhamyadav120.repl.co/static/writer.jpeg.jpg">
-    <h2 class = 'text-center mt-2 mb-4'>About Shubham</h2>
+    <div class='row' style='margin-bottom:16px'>
+    <div class = 'col-md-6'>
     <p class='lead'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </p >
+    <divc class = "d-none d-md-block col-md-6">
+    <img align="right" src='/static/writer2.jpg' style ="height:220px;border-radius:4px">
+    </div>
+    </div>
     <h2 class='text-center'>How Start</h2>
     <p>
       <div>
@@ -36,5 +42,6 @@
       <p class="mt-4">Copyright@2023 , Shubh~am</p>
     </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
